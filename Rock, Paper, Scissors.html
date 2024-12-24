@@ -151,14 +151,14 @@
             document.getElementById('score').textContent = `Player Wins: ${playerWins} | Dealer Wins: ${dealerWins}`;
 
             if (playerWins === 2) {
-                document.getElementById('final-result').innerHTML = '<p>恭喜你，你還活著!</p><img src="Win.jpg" alt="Win" style="width: 300px; height: 300px;">';
+                document.getElementById('final-result').innerHTML = '<p>恭喜你，你還活著!</p><img src="win.jpg" alt="Win" style="width: 300px; height: 300px;">';
                 localStorage.setItem("playerChips", 1000000); // 設定籌碼為 $1,000,000
                 setTimeout(function() {
                     window.location.href = "index.html"; 
                 }, 3000); // 延遲 3 秒後跳轉
                 resetGame();
             } else if (dealerWins === 2) {
-                document.getElementById('final-result').innerHTML = '<p>很抱歉，你死了!</p><img src="Lose.jpg" alt="Game Over" style="width: 300px; height: 300px;">';
+                document.getElementById('final-result').innerHTML = '<p>很抱歉，你死了!</p><img src="lose.jpg" alt="Game Over" style="width: 300px; height: 300px;">';
                 setTimeout(function() {
                     window.location.href = "index.html"; 
                 }, 3000); // 延遲 3 秒後跳轉
